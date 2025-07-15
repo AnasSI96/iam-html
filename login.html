@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EA Login</title>
+  <link rel="stylesheet" href="./utility.css">
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+  <section class="ea-main__wrapper ea-login__wrapper">
+    <section class="ea-login__section">
+      <div class="ea-col__wrapper ea-login__col">
+        <div class="ea__row ea-login">
+          <!-- LOGIN LEFT -->
+          <!-- <div class=""> -->
+          <!-- Add your content here -->
+          <div class="ea-login__left ea__col-sm-7 ea__col-xs-12 ea-login__left">
+            <div class="ea-login__banner__left">
+
+              <!-- Back Button (shown only on desktop, add media query logic via CSS if needed) -->
+              <div class="ea-login__backBtn">
+                <img src="/images/login-back.svg" alt="" width="10" height="8" class="ea-login__backIcon" />
+                <a href="" class="ea-text--primary ea-login__back">back to home</a>
+              </div>
+
+              <!-- Heading (mobile or desktop version can be shown with media query logic) -->
+              <p class="ea-login__head ">
+                Login or Register now to get exclusive access to:
+              </p>
+
+              <!-- Pointers (replaced React <Pointers /> component with list placeholder) -->
+              <div class="ea-pointers__container">
+                <div class="ea-pointers__item">
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <p class="ea-text-3--md-semibold">Live results</p>
+                </div>
+                <div class="ea-pointers__item">
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <p class="ea-text-3--md-semibold">Access to tickets pre-sales</p>
+                </div>
+                <div class="ea-pointers__item">
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <p class="ea-text-3--md-semibold">Exciting giveaways</p>
+                </div>
+                <div class="ea-pointers__item">
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <p class="ea-text-3--md-semibold">Latest Updates</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="ea-login__banner__right">
+              <img src="/images/login-player.png" alt="Player Image" class="ea-login__banner__player" />
+            </div>
+          </div>
+          <!-- LOGIN RIGHT -->
+          <div class="ea__col-sm-5 ea__col-xs-12 ea-login__right">
+            <img src="/images/ea-logo.png" alt="EA Logo" class="ea-login__logo" width="187" height="69" />
+
+            <!-- Form Header -->
+            <div class="ea-login__right__header">
+              <p class="ea-login__right__head ea-heading--h3">welcome back</p>
+              <p class="ea-login__right__desc ea-text-3--md-regular">Please enter your details to continue</p>
+              <div class="ea-login__separator"></div>
+            </div>
+
+            <!-- Form Inputs -->
+            <div class="ea-login__form__elements">
+              <div class="ea-input__wrap ea-input__email">
+                <label for="email" class="ea-input__label ea-text-3--md-semibold">
+                  Email Address
+                  <!-- <span class="ea-input__mandatory">*</span> -->
+                </label>
+
+                <div class="ea-input__box__wrap">
+                  <input type="email" name="email" id="email" placeholder="Enter Email Address"
+                    class="ea-input__box ea-input__verified" />
+
+                  <div class="ea-input__box__btn">
+                    <!-- Verified icon -->
+                    <img src="/images/email-verified.svg" alt="Green Tick Icon" width="24" height="24" />
+
+                    <!-- If using inputBtn instead of icon, use this instead:
+                    <button class="ea-btn__input">Send Code</button>
+                    -->
+                  </div>
+                </div>
+
+                <!-- <p class="ea-input__error ea-text--secondary">Invalid email address</p> -->
+              </div>
+
+
+              <div class="ea-input__wrap ea-input__email">
+                <label for="email" class="ea-input__label ea-text-3--md-semibold">
+                  Password
+                  <!-- <span class="ea-input__mandatory">*</span> -->
+                </label>
+
+                <div class="ea-input__box__wrap">
+                  <input type="email" name="email" id="email" placeholder="Enter Password"
+                    class="ea-input__box ea-input__verified" />
+
+                  <div class="ea-input__box__btn">
+                    <!-- Verified icon -->
+                    <img src="/images/email-verified.svg" alt="Green Tick Icon" width="24" height="24" />
+
+                    <!-- If using inputBtn instead of icon, use this instead:
+                    <button class="ea-btn__input">Send Code</button>
+                    -->
+                  </div>
+                </div>
+
+                <!-- <p class="ea-input__error ea-text--secondary">Invalid password</p> -->
+              </div>
+
+              <!-- <label>Email Address</label>
+              <input type="email" name="email" />
+
+              <label>Password</label>
+              <input type="password" name="password" /> -->
+            </div>
+
+            <!-- Checkbox & Forgot Password -->
+            <div class="ea-login__check__forgot">
+
+              <div class="ea-checkbox__wrap">
+                <input type="checkbox" name="rememberMe" id="rememberMe" placeholder="enter Remember Me"
+                  class="ea-checkbox__box" />
+
+                <label for="rememberMe" class="ea-checkbox__label ea-text-3--md-semibold">
+                  Remember Me
+                  <!-- <span class="ea-checkbox__mandatory">*</span> -->
+                </label>
+              </div>
+              <div>
+                <a class="ea-text--info ea-login__link " href="/terms">Forgot Your Password?</a>
+              </div>
+
+              <!-- <label>
+                <input type="checkbox" name="rememberMe" />
+                Remember Me
+              </label>
+              <a href="/user/forgot-password" class="ea-login__link ea-text--info">forgot your password?</a> -->
+            </div>
+
+            <!-- Login Button -->
+            <button class="ea-login__btn">log in</button>
+
+            <!-- Sign Up Link -->
+            <p class="ea-login__signup">
+              Don't have an account?
+              <a href="/user/register" class="ea-login__signup__link">sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</body>
+
+</html>
