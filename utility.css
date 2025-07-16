@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: 'tracksnormal';
-  src: url('/fonts/tracksnormal.eot');
-  src: url('/fonts/tracksnormal.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/tracksnormal.woff2') format('woff2'),
-    url('/fonts/tracksnormal.woff') format('woff'),
-    url('/fonts/tracksnormal.ttf') format('truetype'),
-    url('/fonts/tracksnormal.svg#font') format('svg');
+  src: url('./fonts/tracksnormal.eot');
+  src: url('./fonts/tracksnormal.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/tracksnormal.woff2') format('woff2'),
+    url('./fonts/tracksnormal.woff') format('woff'),
+    url('./fonts/tracksnormal.ttf') format('truetype'),
+    url('./fonts/tracksnormal.svg#font') format('svg');
   /* font-weight: #{$font-weight}; */
   font-style: normal;
   font-display: swap;
