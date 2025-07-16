@@ -105,12 +105,19 @@
   height: 460px;
 }
 
+.ea-login__backBtn {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .ea-login__banner__right {
     width: 170px;
     height: 220px;
     right: 0;
   }
+
 }
 
 .ea-login__banner__player {
@@ -121,11 +128,7 @@
   color: transparent;
 }
 
-.ea-login__backBtn {
-  display: flex;
-  align-items: center;
-  gap: 0 8px;
-}
+
 
 .ea-login__back {
   text-transform: capitalize;
@@ -170,6 +173,18 @@
   align-items: center;
   gap: 0 10px;
   color: var(--white);
+}
+
+.ea-pointers__item img {
+  width: 10px;
+  height: 10px;
+}
+
+.ea-pointers__item p {
+  font-size: 10px;
+  line-height: 16px;
+  font-family: var(--regular-ff);
+  font-weight: 400;
 }
 
 
@@ -245,4 +260,70 @@
 
 .ea-checkbox__mandatory {
   color: var(--error-600);
+}
+
+.ea-loginHead__wrap {
+  position: relative;
+  padding: 10px 0;
+  background: var(--dark-blue-2);
+  display: flex;
+  justify-content: center;
+}
+
+.ea-loginHead__backIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ea-login__logo {
+  display: none;
+}
+
+.button_ea-login__btn,
+.button_ea-forgot__btn,
+.button_ea-reg__btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.button_ea-btn:not(.button_ea-disabled) {
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .ea-login__backBtn {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+  }
+
+  .ea-loginHead__wrap {
+    display: none;
+  }
+
+
+  .ea-login__logo {
+    display: block;
+  }
+
+  .ea-pointers__item img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ea-pointers__item p {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--medium-ff);
+    font-weight: 600;
+  }
+
+
 }

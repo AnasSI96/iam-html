@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <div class="ea-loginHead__wrap">
+    <img src="/images/mweb-login-logo.svg" alt="" width="122" height="45" class="ea-loginHead__logo" />
+    <img src="/images/login-back.svg" alt="" width="10" height="8" class="ea-loginHead__backIcon" />
+  </div>
   <section class="ea-main__wrapper ea-login__wrapper">
     <section class="ea-login__section">
       <div class="ea-col__wrapper ea-login__col">
@@ -21,32 +25,38 @@
             <div class="ea-login__banner__left">
 
               <!-- Back Button (shown only on desktop, add media query logic via CSS if needed) -->
+
               <div class="ea-login__backBtn">
                 <img src="/images/login-back.svg" alt="" width="10" height="8" class="ea-login__backIcon" />
                 <a href="" class="ea-text--primary ea-login__back">back to home</a>
               </div>
 
               <!-- Heading (mobile or desktop version can be shown with media query logic) -->
-              <p class="ea-login__head ">
+              <!-- <div class="ea-login__backBtn">
+                <img src="/images/login-back.svg" alt="" width="10" height="8" class="ea-login__backIcon" />
+                <a href="/" class="ea-text--primary ea-login__back">back to home</a>
+              </div> -->
+
+              <p class="ea-heading--h1 ea-login__head ">
                 Login or Register now to get exclusive access to:
               </p>
 
               <!-- Pointers (replaced React <Pointers /> component with list placeholder) -->
               <div class="ea-pointers__container">
                 <div class="ea-pointers__item">
-                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" />
                   <p class="ea-text-3--md-semibold">Live results</p>
                 </div>
                 <div class="ea-pointers__item">
-                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" />
                   <p class="ea-text-3--md-semibold">Access to tickets pre-sales</p>
                 </div>
                 <div class="ea-pointers__item">
-                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" />
                   <p class="ea-text-3--md-semibold">Exciting giveaways</p>
                 </div>
                 <div class="ea-pointers__item">
-                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" width="18" height="18" />
+                  <img src="/images/pointer-icon.svg" alt="Orange Start Icon" />
                   <p class="ea-text-3--md-semibold">Latest Updates</p>
                 </div>
               </div>
@@ -136,9 +146,9 @@
                   <!-- <span class="ea-checkbox__mandatory">*</span> -->
                 </label>
               </div>
-              <div>
+              <!-- <div> -->
                 <a class="ea-text--info ea-login__link " href="/terms">Forgot Your Password?</a>
-              </div>
+              <!-- </div> -->
 
               <!-- <label>
                 <input type="checkbox" name="rememberMe" />
@@ -148,7 +158,13 @@
             </div>
 
             <!-- Login Button -->
-            <button class="ea-login__btn">log in</button>
+            <!-- <button class="ea-login__btn">log in</button> -->
+            <button class="ea-btn
+            ea-text-4--sm-bold ea-login__btn" aria-label="log in" aria-disabled="false">
+              <a class="ea-buttontext " aria-label="log in" href="">
+                <span>log in</span>
+              </a>
+            </button>
 
             <!-- Sign Up Link -->
             <p class="ea-login__signup">

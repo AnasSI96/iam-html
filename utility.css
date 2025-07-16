@@ -1167,3 +1167,115 @@ button {
 .ea-text--live {
   color: var(--success-600);
 }
+
+button {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.ea-btn {
+
+  --bg-color: var(--cta-1);
+  --bg-hover-color: var(--cta-1);
+  --bg-active-color: var(--cta-1);
+  --border-color: var(--cta-1);
+  --border-radius-sm: 8px;
+  --text-color: var(--cta-text-white);
+  --text-hover-color: var(--cta-text-white);
+  --text-active-color: var(--cta-text-white);
+  --icon-color: var(--white);
+
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: setUnit(12);
+  line-height: 18px;
+  font-family: var(--bold-ff);
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.ea-btn-hover:hover {
+  background-color: var(--cta-1-hover);
+}
+.ea-btn a {
+  color: inherit;
+  padding: setUnit(10) setUnit(18);
+  gap: setUnit(8);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.ea-btn a:hover, .ea-btn a:active, .ea-btn a:focus {
+  color: inherit;
+}
+.ea-btn i {
+  color: var(--icon-color);
+}
+.ea-btn:not(.ea-disabled) {
+  cursor: pointer;
+}
+.ea-btn__secondary, .ea-btn__secondary-2 {
+  border-radius: 0;
+}
+.ea-btn__secondary a, .ea-btn__secondary-2 a {
+  padding: 10px 22px;
+}
+@media screen and (max-width: 767px) {
+  .ea-btn__secondary a, .ea-btn__secondary-2 a {
+    padding: 16px 22px;
+  }
+}
+.ea-btn__link a {
+  padding: 0;
+}
+.ea-btn__link-secondary a {
+  padding: 14px 12px;
+  min-width: 86px;
+  width: max-content;
+}
+.ea-btn--with-radius {
+  border-radius: 4px;
+}
+.ea-btn--lg {
+  width: 100%;
+}
+.ea-btn__radius-sm {
+  border-radius: var(--border-radius-sm);
+}
+.ea-btn--nolink {
+  display: flex;
+  padding: 14px 12px;
+  gap: 8px;
+  min-width: 86px;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+}
+.ea-btn--nolink span:hover {
+  color: var(--gray-500);
+}
+
+.ea-login__btn,
+.ea-forgot__btn,
+.ea-reg__btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+
+.ea-buttontext {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
