@@ -131,3 +131,31 @@
   display: flex;
   flex: 1;
 }
+
+
+
+.ea-verify__wrap {
+  margin: 15px 0;
+}
+.ea-verify__desc {
+  color: var(--gray-500);
+  margin: 2px 0 15px;
+}
+.ea-verify__otpBoxes {
+  display: flex;
+  gap: 0 10px;
+  margin-bottom: 10px;
+}
+.ea-verify__otpBox {
+  width: 48px;
+  height: 48px;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+}
+.ea-verify__otpBox--active {
+  border: 2px solid var(--success-700);
+}
+.ea-verify__otpBox:focus-visible {
+  outline: none;
+}

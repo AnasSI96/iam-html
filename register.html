@@ -7,6 +7,7 @@
   <title>EA Login</title>
   <link rel="stylesheet" href="./utility.css">
   <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./register.css">
 </head>
 
 <body>
@@ -70,52 +71,91 @@
               <div class="ea-input__wrap ea-input__email">
                 <label for="email" class="ea-input__label ea-text-3--md-semibold">
                   Email Address
+                  <span class="ea-input__mandatory">*</span>
                 </label>
 
                 <div class="ea-input__box__wrap">
-                  <input type="email" name="email" id="email" placeholder="Enter Email Address"
-                    class="ea-input__box ea-input__verified" />
-
+                  <input type="email" id="email" placeholder="Enter email address" class="ea-input__box " name="email">
                   <div class="ea-input__box__btn">
-                    <!-- Verified icon -->
-                    <img src="./images/email-verified.svg" alt="Green Tick Icon" width="24" height="24" />
-
-                    <!-- If using inputBtn instead of icon, use this instead:
-                    <button class="ea-btn__input">Send Code</button>
-                    -->
+                    <button class="ea-btn  ea-text-4--sm-bold ea-btn__input" aria-label="verify" aria-disabled="false">
+                      <a class="ea-buttontext " aria-label="verify" href=""><span>verify</span></a>
+                    </button>
                   </div>
                 </div>
 
                 <p class="ea-input__error ea-text--secondary">Invalid email address</p>
               </div>
 
+              <div class="ea-verify__wrap">
+                <p class="ea-text--primary">OTP Verification</p>
+                <p class="ea-verify__desc ea-text--secondary">Enter the 4 digit OTP sent to test@test.com to
+                  proceed</p>
+                <div class="ea-verify__otpBoxes"><input class="ea-verify__otpBox" type="text" inputmode="numeric"
+                    maxlength="1" value=""><input class="ea-verify__otpBox" type="text" inputmode="numeric"
+                    maxlength="1" value=""><input class="ea-verify__otpBox" type="text" inputmode="numeric"
+                    maxlength="1" value=""><input class="ea-verify__otpBox" type="text" inputmode="numeric"
+                    maxlength="1" value=""></div>
+                <div class="ea-text--secondary">Didn't receive the OTP? <button
+                    class="ea-btn ea-text-4--sm-bold ea-btn__resend--active" aria-label="Resend OTP"
+                    aria-disabled="false"><a class="ea-buttontext " aria-label="Resend OTP" href=""><span>Resend
+                        OTP</span></a></button></div>
+                <div class="ea-text--secondary">Time Remaining: 0 secs</div>
+              </div>
+
 
               <div class="ea-input__wrap ea-input__email">
-                <label for="email" class="ea-input__label ea-text-3--md-semibold">
-                  Password
-                  <!-- <span class="ea-input__mandatory">*</span> -->
+                <label for="fname" class="ea-input__label ea-text-3--md-semibold">
+                  First Name
+                  <span class="ea-input__mandatory">*</span>
                 </label>
 
                 <div class="ea-input__box__wrap">
-                  <input type="email" name="email" id="email" placeholder="Enter Password"
+                  <input type="text" name="fname" id="fname" placeholder="Enter First Name"
                     class="ea-input__box ea-input__verified" />
-
-                  <div class="ea-input__box__btn">
-                    <!-- Verified icon -->
-                    <img src="./images/email-verified.svg" alt="Green Tick Icon" width="24" height="24" />
-
-                    <!-- If using inputBtn instead of icon, use this instead:
-                    <button class="ea-btn__input">Send Code</button>
-                    -->
-                  </div>
                 </div>
-
                 <p class="ea-input__error ea-text--secondary">Invalid password</p>
               </div>
+              <div class="ea-input__wrap ea-input__email">
+                <label for="lname" class="ea-input__label ea-text-3--md-semibold">
+                  Last Name
+                  <span class="ea-input__mandatory">*</span>
+                </label>
+
+                <div class="ea-input__box__wrap">
+                  <input type="text" name="lname" id="lname" placeholder="Enter Last Name"
+                    class="ea-input__box ea-input__verified" />
+                </div>
+                <p class="ea-input__error ea-text--secondary">Invalid password</p>
+              </div>
+
+
+              <div class="ea-reg__gender__date">
+                <div class="ea-dropdown ea-login__dropdown"><label id="dropdown-label"
+                    class="ea-label ea-text--primary ea-login__label">Gender</label>&nbsp;<span
+                    class="ea-input__mandatory">*</span><button class="ea-toggleButton ea-text-2--lg-regular ea-login__button"
+                    aria-labelledby="dropdown-label" aria-haspopup="listbox" aria-expanded="false"
+                    aria-label="Open dropdown for Gender"><span class="ea-selected">Select Gender</span>
+                    <div class="icon_ea-icon__wrap icon_ea-size--lg icon_ea-icon__wrap-down"><i aria-hidden="true" tabindex="-1" class="ea-icon-arrow-down "></i></div>
+                  </button>
+                  <ul class="ea-options" role="listbox" aria-labelledby="dropdown-label">
+                    <li role="option" aria-selected="false" class="ea-option">Man</li>
+                    <li role="option" aria-selected="false" class="ea-option">Woman</li>
+                  </ul>
+                </div>
+                <div class="ea-input__wrap"><label for="date"
+                    class="ea-input__label ea-text-3--md-semibold">DOB<!-- -->&nbsp;<span
+                      class="ea-input__mandatory">*</span></label>
+                  <div class="ea-input__box__wrap"><input type="date" id="date" placeholder="Enter DOB"
+                      class="ea-input__box " name="date">
+                    <div class="ea-input__box__btn"></div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <!-- Checkbox & Forgot Password -->
-            <div class="ea-login__check__forgot">
+            <!-- <div class="ea-login__check__forgot">
 
               <div class="ea-checkbox__wrap">
                 <input type="checkbox" name="rememberMe" id="rememberMe" placeholder="enter Remember Me"
@@ -126,7 +166,7 @@
                 </label>
               </div>
               <a class="ea-text--info ea-login__link " href="/terms">Forgot Your Password?</a>
-            </div>
+            </div> -->
 
             <!-- Login Button -->
             <button class="ea-btn

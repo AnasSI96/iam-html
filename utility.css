@@ -1279,3 +1279,178 @@ button {
   text-decoration: none;
   text-transform: capitalize;
 }
+
+.ea-btn__input {
+  border-radius: 6px;
+}
+.ea-btn__input a {
+  width: 100%;
+  max-width: 64px;
+  height: 26px;
+  padding: 6px 14px;
+}
+.ea-btn__input--disable {
+  border: 1px solid var(--gray-400);
+  background: var(--gray-400);
+  border-radius: 6px;
+  pointer-events: none;
+}
+.ea-btn__input--disable a {
+  width: 100%;
+  max-width: 64px;
+  height: 26px;
+  padding: 6px 14px;
+}
+
+
+.ea-input__mandatory {
+  color: var(--error-600);
+}
+
+.ea-btn__resend {
+  pointer-events: none;
+  display: inline-block;
+  border: none;
+  background: transparent;
+  color: var(--gray-400);
+}
+.ea-btn__resend a {
+  padding: 0 6px;
+}
+.ea-btn__resend--active {
+  pointer-events: all;
+  display: inline-block;
+  border: none;
+  background: transparent;
+  color: var(--orange);
+}
+.ea-btn__resend--active a {
+  padding: 0 6px;
+}
+.ea-btn__resend--active a:hover {
+  text-decoration: underline;
+}
+
+
+.ea-dropdown {
+  position: relative;
+  width: 100%;
+}
+.ea-label {
+  color: var(--grayscale-text1);
+  font-family: var(--regular-ff);
+  margin-bottom: 6px;
+}
+.ea-toggleButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border: 1px solid #66666b;
+  color: var(--grayscale-text2);
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  flex: 1;
+}
+.ea-toggleButton span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ea-toggleButton:hover {
+  border-color: var(--grayscale-text2);
+}
+.ea-options {
+  position: absolute;
+  background: var(--white);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: var(--gray-900);
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+  margin-top: setUnit(6);
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.ea-options.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 111;
+}
+.ea-option {
+  text-transform: capitalize;
+  padding: setUnit(10);
+  cursor: pointer;
+}
+.ea-option:hover {
+  background: #f0f0f0;
+}
+.ea-selected {
+  color: var(--black);
+}
+.ea-placeholder {
+  color: var(--grayscale-text2);
+}
+
+
+.ea-input__wrap {
+  margin-bottom: 14px;
+  flex: 1;
+}
+.ea-input__label {
+  text-transform: capitalize;
+  color: var(--grayscale-text2);
+}
+.ea-input__box {
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--grayscale-text2);
+}
+.ea-input__box::placeholder {
+  color: var(--grayscale-text2);
+}
+.ea-input__box:focus-visible {
+  outline: none;
+}
+.ea-input__box__wrap {
+  position: relative;
+}
+.ea-input__box__btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.ea-input__error {
+  color: var(--error-600);
+}
+.ea-input__verified {
+  border: 1px solid var(--success-700);
+}
+
+
+.ea-login__dropdown {
+  margin-bottom: 14px;
+}
+.ea-login__dropdown .ea-login__label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--grayscale-text2);
+}
+.ea-login__dropdown .ea-login__button {
+  margin-top: 6px;
+  min-height: 48px;
+  border: 1px solid var(--grayscale-text2);
+}
