@@ -1,0 +1,133 @@
+.ea-reg__col:not(:last-child) {
+  margin-bottom: 0;
+}
+.ea-reg__left {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 65px 0 0 70px;
+  background: linear-gradient(120deg, #00053E, #0099D8);
+}
+@media screen and (max-width: 768px) {
+  .ea-reg__left {
+    padding: 20px;
+  }
+}
+.ea-reg__backBtn {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.ea-reg__back {
+  text-transform: capitalize;
+  color: var(--white);
+}
+.ea-reg__head {
+  letter-spacing: -1px;
+  color: var(--white);
+  margin: 70px 0 30px;
+}
+@media screen and (max-width: 768px) {
+  .ea-reg__head {
+    margin: 0 0 30px;
+    max-width: 230px;
+    letter-spacing: initial;
+  }
+}
+.ea-reg__banner__left {
+  max-width: 500px;
+}
+.ea-reg__banner__right {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  width: 350px;
+  height: 460px;
+}
+@media screen and (max-width: 768px) {
+  .ea-reg__banner__right {
+    width: 170px;
+    height: 220px;
+    right: 0;
+  }
+}
+.ea-reg__banner__player {
+  object-fit: contain;
+}
+.ea-reg__right {
+  max-height: 100vh;
+  overflow: hidden auto;
+  padding: 40px 70px;
+}
+@media screen and (max-width: 768px) {
+  .ea-reg__right {
+    padding: 20px;
+    max-height: max-content;
+    overflow: initial;
+  }
+}
+.ea-reg__right__header {
+  margin-top: 65px;
+}
+@media screen and (max-width: 768px) {
+  .ea-reg__right__header {
+    margin-top: 25px;
+  }
+}
+.ea-reg__right__head {
+  text-transform: capitalize;
+  letter-spacing: -1px;
+}
+.ea-reg__right__desc {
+  margin-top: 7px;
+  color: var(--grayscale-text1);
+}
+.ea-reg__separator {
+  width: 100%;
+  height: 0.5px;
+  margin: 20px 0;
+  background: var(--gray-300);
+}
+.ea-reg__check__forgot {
+  display: flex;
+  justify-content: space-between;
+}
+.ea-reg__link {
+  text-transform: capitalize;
+}
+.ea-reg__signup {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--grayscale-text1);
+}
+.ea-reg__signup__link {
+  text-transform: capitalize;
+  color: var(--mid-blue);
+}
+.ea-reg__gender__date {
+  display: flex;
+  gap: 20px;
+}
+.ea-reg__setPass {
+  position: relative;
+}
+.ea-reg__setPass__icon {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}
+.ea-reg__congrats {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .ea-reg__congrats {
+    padding: 20px 20px 40px;
+  }
+}
+.ea-reg__congrats__box {
+  display: flex;
+  flex: 1;
+}
