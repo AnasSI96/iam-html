@@ -1454,3 +1454,30 @@ button {
   min-height: 48px;
   border: 1px solid var(--grayscale-text2);
 }
+
+
+.ea-checkbox__wrap {
+  display: flex;
+  align-items: flex-start;
+}
+.ea-checkbox__label {
+  text-transform: capitalize;
+  color: var(--grayscale-text2);
+  margin-top: -5px;
+}
+.ea-checkbox__box {
+  border-radius: 8px;
+  margin-right: 8px;
+  border: 1px solid var(--grayscale-text2);
+}
+.ea-checkbox__box::placeholder {
+  text-transform: capitalize;
+  color: var(--grayscale-text2);
+}
+.ea-checkbox__mandatory {
+  color: var(--error-600);
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
